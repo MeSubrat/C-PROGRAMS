@@ -1,0 +1,26 @@
+00:32:27 **** Incremental Build of configuration Debug for project helloworld ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Test.o "..\\Test.c" 
+..\Test.c:3:1: error: unknown type name 'bool'
+ bool strcomp(char 'a',char 'b')
+ ^~~~
+..\Test.c:3:19: error: expected ';', ',' or ')' before 'a'
+ bool strcomp(char 'a',char 'b')
+                   ^~~
+..\Test.c: In function 'main':
+..\Test.c:21:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  char username="Subrat@2023"
+                ^~~~~~~~~~~~~
+..\Test.c:22:2: error: expected ',' or ';' before 'char'
+  char userid[20];
+  ^~~~
+..\Test.c:24:14: error: 'userid' undeclared (first use in this function)
+  scanf("%s",&userid);
+              ^~~~~~
+..\Test.c:24:14: note: each undeclared identifier is reported only once for each function it appears in
+..\Test.c:25:8: warning: implicit declaration of function 'strcomp' [-Wimplicit-function-declaration]
+  while(strcomp(userid,username)!=0)
+        ^~~~~~~
+
+00:32:27 Build Failed. 4 errors, 2 warnings. (took 529ms)
+

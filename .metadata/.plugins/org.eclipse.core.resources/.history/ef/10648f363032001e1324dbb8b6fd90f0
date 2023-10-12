@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char username="Subrat@2023"
+	char userid[20];
+	printf("Enter username: ");
+	scanf("%s",&userid);
+	while(strcmp(userid,username)!=0)
+	{
+		printf("Enter username: ");
+		scanf("%s",&userid);
+		if(strcmp(userid,username)==0)
+			{
+				printf("Welcome!!");
+			}
+			else
+			{
+				printf("Enter password again: ");
+			}
+	}
+}
+
+
+
